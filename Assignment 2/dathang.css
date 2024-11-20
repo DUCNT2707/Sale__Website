@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #444;
+    padding: 60px; /* Increased padding for larger form */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 800px; /* Increased max-width for larger form */
+    width: 100%;
+}
+
+form input[type="text"],
+form select {
+    width: calc(100% - 40px); /* Adjusted for increased padding */
+    padding: 20px; /* Increased padding for larger input fields */
+    margin: 20px 0; /* Increased margin for more spacing */
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    font-size: 22px; /* Increased font size */
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.5); /* Make radio buttons larger */
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 20px; /* Increased padding for larger button */
+    margin: 30px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 25px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#phi_vc {
+    display: none;
+}
+
+#phi_vc input {
+    width: calc(100% - 40px); /* Adjusted for increased padding */
+}
+
+form div {
+    margin-bottom: 20px; /* Increased margin for more spacing */
+}
+
+p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}

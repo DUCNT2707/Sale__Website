@@ -1,0 +1,42 @@
+// Hiển thị số lượng sản phẩm trong giỏ hàng
+function updateCartCount() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartCount = cart.length;
+
+  let t = document.getElementById("cart-count");
+
+  t.innerText = cartCount;
+
+  console.log(t);
+}
+
+// Khởi tạo số lượng sản phẩm trong giỏ hàng khi tải trang
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartCount();
+
+  // Gán sự kiện onclick cho các nút mua hàng trong Menu.html
+  const buyButtons = document.querySelectorAll(".buy-button");
+  buyButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const name = this.parentElement.querySelector(".product-name").innerText;
+      const price = this.parentElement
+        .querySelector(".product-price")
+        .innerText.split(" ")[0]; // Giả sử giá có định dạng như "580 vàng"
+      addToCart(name, price);
+    });
+  });
+});
+
+// Hàm thêm sản phẩm vào giỏ hàng
+function addToCart(name, price) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push({ name: name, price: price });
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount(); // Cập nhật số lượng sản phẩm ngay sau khi thêm
+}
+
+// Hàm hiển thị giỏ hàng
+function showCart() {
+  const iframe = document.querySelector('iframe[name="page"]');
+  iframe.src = "cart.html";
+}

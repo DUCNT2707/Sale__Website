@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Menu.css" />
+  </head>
+  <body>
+    <img src="img/hinh-anh-sale-50-dep_083652935.jpg" alt="" />
+    <header>
+      <p>Các Sản phẩm</p>
+    </header>
+    <div class="product-container">
+      <div class="cachdeu">
+        <!-- Sản phẩm 1 -->
+        <div class="product-card">
+          <img
+            src="img/b86b4a1e5a5c3801f0c11fd76a8cbe0c5875f18bcc5ec1.png"
+            alt="Giày Hermes"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Giày Hermes</h3>
+            <p class="product-describe">
+              +300 Máu tối đa +70 Tốc chạy – Nội tại duy nhất: Gia tốc Nhanh
+              nhạy: Tăng 60 Tốc chạy khi thoát khỏi trạng thái giao tranh – Nội
+              tại duy nhất
+            </p>
+            <p class="product-price">580 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Giày Hermes', 
+                                  '580', 
+                                  'img/b86b4a1e5a5c3801f0c11fd76a8cbe0c5875f18bcc5ec1.png', 
+                                  '+300 Máu tối đa +70 Tốc chạy - Nội tại duy nhất: Gia tốc Nhanh nhạy: Tăng 60 Tốc chạy khi thoát khỏi trạng thái giao tranh – Nội tại duy nhất')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+        <!-- Sản phẩm 2 -->
+        <div class="product-card">
+          <img
+            src="img/0b2a528cdd009437b1635def58e353675875f09318ffd1.png"
+            alt="Giày hộ vệ"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Giày hộ vệ</h3>
+            <p class="product-describe">
+              +110 Giáp +60 Tốc chạy – Nội tại duy nhất: Gia tốc Giảm 10% sát
+              thương gánh chịu từ đòn đánh tay – Nội tại duy nhất
+            </p>
+            <p class="product-price">700 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Giày hộ vệ', '700', 'img/0b2a528cdd009437b1635def58e353675875f09318ffd1.png', '+110 Giáp +60 Tốc chạy – Nội tại duy nhất: Gia tốc Giảm 10% sát thương gánh chịu từ đòn đánh tay – Nội tại duy nhất')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+        <!-- Sản phẩm 3 -->
+        <div class="product-card">
+          <img
+            src="img/icon55eaf54151e5f99b1442aceb380cb3cf58536633305011.png"
+            alt="Áo choàng băng giá"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Áo choàng băng giá</h3>
+            <p class="product-describe">
+              +10% Giảm hồi chiêu +200 Giáp +800 Máu Sức mạnh nguyên tố: Sau khi
+              tung chiêu, trong 5 giây sẽ khiến đòn đánh kế gây thêm 100 (+30%
+              công vật lý) sát thương vật lý
+            </p>
+            <p class="product-price">1970 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Áo choàng băng giá', '1970', 'img/icon55eaf54151e5f99b1442aceb380cb3cf58536633305011.png', '+10% Giảm hồi chiêu +200 Giáp +800 Máu Sức mạnh nguyên tố: Sau khi tung chiêu, trong 5 giây sẽ khiến đòn đánh kế gây thêm 100 (+30% công vật lý) sát thương vật lý')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+        <!-- Sản phẩm 4 -->
+        <div class="product-card">
+          <img
+            src="img/9f2d442bf8b0f7597bd23de1af9c1ba9583eb6859264b1.png"
+            alt="Giáp Gaia"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Giáp Gaia</h3>
+            <p class="product-describe">
+              +1200 Máu +200 Giáp phép +5% Tốc chạy
+            </p>
+            <p class="product-price">1960 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Giáp Gaia', '1960', 'img/9f2d442bf8b0f7597bd23de1af9c1ba9583eb6859264b1.png', '+1200 Máu +200 Giáp phép +5% Tốc chạy')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+        <!-- Sản phẩm 5 -->
+        <div class="product-card">
+          <img
+            src="img/22878b0202ea24b883044a9c642d5536583eb618cf2971.png"
+            alt="Khiên huyền thoại"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Khiên huyền thoại</h3>
+            <p class="product-describe">
+              +360 Giáp +400 Năng lượng +20% Giảm hồi chiêu
+            </p>
+            <p class="product-price">2180 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Khiên huyền thoại', '2180', 'img/22878b0202ea24b883044a9c642d5536583eb618cf2971.png', '+360 Giáp +400 Năng lượng +20% Giảm hồi chiêu')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cachdeu">
+        <!-- Sản phẩm 6 -->
+        <div class="product-card">
+          <img
+            src="img/098ae164502918650b6334ce885d7d71583eb5aa4f7e31.png"
+            alt="Khiên thất truyền"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Khiên thất truyền</h3>
+            <p class="product-describe">
+              +275 Giáp +1200 Máu Lính gác: Nếu tướng chịu sát thương, giảm 30%
+              Tốc đánh
+            </p>
+            <p class="product-price">2100 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Khiên thất truyền', '2100', 'img/098ae164502918650b6334ce885d7d71583eb5aa4f7e31.png', '+275 Giáp +1200 Máu Lính gác: Nếu tướng chịu sát thương, giảm 30% Tốc đánh')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+        <!-- Sản phẩm 7 -->
+        <div class="product-card">
+          <img
+            src="img/iconc412f57b9e56e33473ff1a7c87f64c3c5c8b6e31b77f71.png"
+            alt="Áo choàng thần Ra"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Áo choàng thần Ra</h3>
+            <p class="product-describe">+1000 máu +225 Giáp +60 Hồi máu</p>
+            <p class="product-price">1950 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Áo choàng thần Ra', '1950', 'img/iconc412f57b9e56e33473ff1a7c87f64c3c5c8b6e31b77f71.png', '+1000 máu +225 Giáp +60 Hồi máu')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+        <!-- Sản phẩm 8 -->
+        <div class="product-card">
+          <img
+            src="img/f1221bb1919f19d0ffd7aa3b9d521248583eb5022028c1.png"
+            alt="Giáp cuồng nộ"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Giáp cuồng nộ</h3>
+            <p class="product-describe">+225 Giáp +1200 Máu +5% Tốc chạy</p>
+            <p class="product-price">1900 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Giáp cuồng nộ', '1900', 'img/f1221bb1919f19d0ffd7aa3b9d521248583eb5022028c1.png', '+225 Giáp +1200 Máu +5% Tốc chạy')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+        <!-- Sản phẩm 9 -->
+        <div class="product-card">
+          <img
+            src="img/7c7e5cbc16a0a12b0363ffec0dd4bbe0583eb735ebea21.png"
+            alt="Huân Chương Troy"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Huân Chương Troy</h3>
+            <p class="product-describe">
+              +200 Giáp phép +1000 máu +10% giảm hồi chiêu
+            </p>
+            <p class="product-price">2320 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Huân Chương Troy', '2320', 'img/7c7e5cbc16a0a12b0363ffec0dd4bbe0583eb735ebea21.png', '+200 Giáp phép +1000 máu +10% giảm hồi chiêu')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+        <!-- Sản phẩm 10 -->
+        <div class="product-card">
+          <img
+            src="img/iconce863be5ae7f9884727b453959c033e159eebee5cca801.png"
+            alt="Hercule thịnh nộ"
+          />
+          <div class="product-details">
+            <h3 class="product-name">Hercule thịnh nộ</h3>
+            <p class="product-describe">
+              +180 Giáp +80 Công vật lý Cuồng Nộ: Khi máu của tướng xuống dưới
+              40%, tăng 20% hút máu
+            </p>
+            <p class="product-price">2080 vàng</p>
+            <button
+              class="buy-button"
+              onclick="addToCart('Hercule thịnh nộ', '2080', 'img/iconce863be5ae7f9884727b453959c033e159eebee5cca801.png', '+180 Giáp +80 Công vật lý Cuồng Nộ: Khi máu của tướng xuống dưới 40%, tăng 20% hút máu')"
+            >
+              Mua hàng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Menu2.js"></script>
+  </body>
+</html>

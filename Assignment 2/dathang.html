@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Order</title>
+    <link rel="stylesheet" href="dathang.css" />
+</head>
+<body>
+    <form id="orderForm" onsubmit="return kiem_tra()">
+        <p>Địa chỉ:</p><input type="text" id="dia_chi_cu_the" name="dia_chi_cu_the"><br>
+        <p>Loại sản phẩm:</p> 
+        <select id="loai" name="loai">
+            <option value="">Chọn loại sản phẩm</option>
+            <option value="loai1">Dễ Vỡ</option>
+            <option value="loai2">Không Dễ Vỡ</option>
+        </select><br>
+        <p>Nơi nhận hàng:</p> 
+        <input type="radio" name="dia_chi" value="noi_thanh" onclick="hien_thi(false)"> Nội thành
+        <input type="radio" name="dia_chi" value="ngoai_thanh" onclick="hien_thi(true)"> Ngoại thành<br>
+        <div id="phi_vc" style="display:none;">
+            <P>Phí vận chuyển:</P> <input type="text" name="phi_vc"><br>
+        </div>
+        <input type="submit" value="Đặt mua">
+    </form>
+
+    <script src="dathang.js"></script>
+</body>
+</html>

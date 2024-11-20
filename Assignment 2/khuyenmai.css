@@ -1,0 +1,60 @@
+body {
+    background-image: url('img/hinh-nen-mau-tim-dep-chat-1.jpg');
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .promotion, .countdown {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #444; /* Slightly lighter background for containers */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+  }
+  
+  h1, h2 {
+    font-size: 2.5em;
+    margin: 10px 0;
+  }
+  
+  input[type="datetime-local"] {
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #555;
+    color: white;
+  }
+  
+  button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #888;
+  }
+  
+  #countdown-timer {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #ff5722; /* Bright color for the countdown */
+  }
+  
